@@ -1,0 +1,2 @@
+rootProject.name='MakePairs'
+include ':app'

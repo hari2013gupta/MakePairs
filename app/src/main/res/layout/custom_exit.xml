@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/bg_exit"
+    >
+ 
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@drawable/icon"
+        android:src="@drawable/icon"
+        android:visibility="gone" />
+    
+<RelativeLayout 
+    android:id="@+id/rl_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+    	android:layout_marginBottom="10dp"
+    >
+    
+    <TextView
+        android:id="@+id/textV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Make Pairs"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:typeface="serif" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Do you want to exit?"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:typeface="serif" />
+
+    </RelativeLayout>
+    
+<RelativeLayout 
+    android:id="@+id/rl_btns"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/rl_tv"
+    android:layout_marginTop="20dp"
+    >
+    
+    <ImageView
+        android:id="@+id/buttonResume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/btn_resume"
+        android:text="" 
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/btn_yes"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/btn_yes"
+        android:text="" 
+        android:visibility="visible"/>
+    
+    <ImageView
+        android:id="@+id/btn_no"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_yes"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/btn_no"
+        android:text="" />
+    </RelativeLayout>
+</RelativeLayout>
