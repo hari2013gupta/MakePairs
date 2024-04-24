@@ -254,54 +254,54 @@ public class MenuActivity extends Activity {
     
     }
     //hariJ_all_functiona=s
-	public void showAlert(String msg){
-    	AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
-    	//hari_exp
-//      View title = getWindow().findViewById(android.R.id.custom);
-//      View titleBar = (View) title.getParent();
-//      titleBar.setBackgroundColor(Color.BLACK);
-//      titleBar.setVisibility(View.VISIBLE);
-  	//hari_exp_end_of the code
-        builder1.setTitle("Mouse Maze");
-    	builder1.setMessage(msg);
-        builder1.setCancelable(true);
-//        builder1.setIcon(R.drawable.ic_launcher);
-        builder1.setPositiveButton("Yes",
-                new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-        		getURL="https://play.google.com/store/apps/details?id=com.appsd.mousemaze";
-//        		Intent intent=new Intent(getApplicationContext(), getURL);
-//    			startActivity(intent);  
-
-        		Intent browserIntent = new Intent(
-        				Intent.ACTION_VIEW, Uri.parse(getURL));
-        		startActivity(browserIntent);//mp.stop();
-//        		System.out.println("----------------exti---------------");//UC wb
-//        		Context context=view.getContext();
-//        		Intent thingyToInstall=new Intent(Intent.ACTION_VIEW);
-//        		thingyToInstall.setDataAndType(Uri.parse(getURL), null);
-//        		context.startActivity(thingyToInstall);
-            }
-        });
-        
-        builder1.setNegativeButton("No",
-                new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-//                dialog.cancel();
-                dialog.cancel();//mp.stop();
-//                System.runFinalizersOnExit(true);
-//                System.exit(0);finish();
-		        Intent intent = new Intent(Intent.ACTION_MAIN);
-		        intent.addCategory(Intent.CATEGORY_HOME);
-		        
-		        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		        startActivity(intent);
-            }
-        });
-
-        AlertDialog alert11 = builder1.create();
-        alert11.show();
-    }
+//	public void showAlert(String msg){
+//    	AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
+//    	//hari_exp
+////      View title = getWindow().findViewById(android.R.id.custom);
+////      View titleBar = (View) title.getParent();
+////      titleBar.setBackgroundColor(Color.BLACK);
+////      titleBar.setVisibility(View.VISIBLE);
+//  	//hari_exp_end_of the code
+//        builder1.setTitle("Mouse Maze");
+//    	builder1.setMessage(msg);
+//        builder1.setCancelable(true);
+////        builder1.setIcon(R.drawable.ic_launcher);
+//        builder1.setPositiveButton("Yes",
+//                new DialogInterface.OnClickListener() {
+//            public void onClick(DialogInterface dialog, int id) {
+//        		getURL="https://play.google.com/store/apps/details?id=com.appsd.mousemaze";
+////        		Intent intent=new Intent(getApplicationContext(), getURL);
+////    			startActivity(intent);
+//
+//        		Intent browserIntent = new Intent(
+//        				Intent.ACTION_VIEW, Uri.parse(getURL));
+//        		startActivity(browserIntent);//mp.stop();
+////        		System.out.println("----------------exti---------------");//UC wb
+////        		Context context=view.getContext();
+////        		Intent thingyToInstall=new Intent(Intent.ACTION_VIEW);
+////        		thingyToInstall.setDataAndType(Uri.parse(getURL), null);
+////        		context.startActivity(thingyToInstall);
+//            }
+//        });
+//
+//        builder1.setNegativeButton("No",
+//                new DialogInterface.OnClickListener() {
+//            public void onClick(DialogInterface dialog, int id) {
+////                dialog.cancel();
+//                dialog.cancel();//mp.stop();
+////                System.runFinalizersOnExit(true);
+////                System.exit(0);finish();
+//		        Intent intent = new Intent(Intent.ACTION_MAIN);
+//		        intent.addCategory(Intent.CATEGORY_HOME);
+//
+//		        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//		        startActivity(intent);
+//            }
+//        });
+//
+//        AlertDialog alert11 = builder1.create();
+//        alert11.show();
+//    }
 //	public void AlertCustom(){
 //	    final Dialog dialog = new Dialog(MenuActivity.this);
 //	    

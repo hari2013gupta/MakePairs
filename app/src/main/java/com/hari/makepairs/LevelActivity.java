@@ -88,7 +88,7 @@ public class LevelActivity extends Activity implements OnClickListener {
 				mp.start();
  			if(1 <= mUnlockedLevels){
 	         level = "diff1"; _btn_diff1.setSelected(true);
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  			}else _btn_diff1.setEnabled(false);
@@ -99,7 +99,7 @@ public class LevelActivity extends Activity implements OnClickListener {
  			if(2 <= mUnlockedLevels){
 	         level = "diff2";
              _btn_diff2.setSelected(true);
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  			}else _btn_diff2.setEnabled(false);
@@ -109,7 +109,7 @@ public class LevelActivity extends Activity implements OnClickListener {
 			if(3 <= mUnlockedLevels){
 			_btn_diff3.setEnabled(true);
 			level = "diff3";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  			}else _btn_diff3.setEnabled(false);
@@ -118,7 +118,7 @@ public class LevelActivity extends Activity implements OnClickListener {
 //				mp.start();
 			if(4 <= mUnlockedLevels){
 	         level = "diff4";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  			}else _btn_diff4.setEnabled(false);
@@ -127,7 +127,7 @@ public class LevelActivity extends Activity implements OnClickListener {
 //				mp.start();
 //			if(5 <= mUnlockedLevels){
 	         level = "diff5";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
 // 			}else _btn_diff5.setEnabled(false);
@@ -135,105 +135,105 @@ public class LevelActivity extends Activity implements OnClickListener {
  		else if(v==_btn_diff6){
 //				mp.start();
 	         level = "diff6";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}
  		else if(v==_btn_diff7){
 //				mp.start();
 	         level = "diff7";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}
  		else if(v==_btn_diff8){
 				mp.start();
 	         level = "diff8";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}
  		else if(v==_btn_diff9){
 				mp.start();
 	         level = "diff9";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}
  		else if(v==_btn_diff10){
 				mp.start();
 	         level = "diff10";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}
  		else if(v==_btn_diff11){
 				mp.start();
 	         level = "diff11";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}
  		else if(v==_btn_diff12){
 				mp.start();
 	         level = "diff12";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}
  		else if(v==_btn_diff13){
 				mp.start();
 	         level = "diff13";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}
  		else if(v==_btn_diff14){
 				mp.start();
 	         level = "diff14";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}
  		else if(v==_btn_diff15){
 				mp.start();
 	         level = "diff15";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}
  		else if(v==_btn_diff16){
 				mp.start();
 	         level = "diff16";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}
  		else if(v==_btn_diff17){
 				mp.start();
 	         level = "diff17";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}
  		else if(v==_btn_diff18){
 				mp.start();
 	         level = "diff18";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}
  		else if(v==_btn_diff19){
 				mp.start();
 	         level = "diff19";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}
  		else if(v==_btn_diff20){
 				mp.start();
 	         level = "diff20";
-             Intent intent = new Intent (LevelActivity.this, MainActivity.class);
+             Intent intent = new Intent (LevelActivity.this, MainActivity1.class);
              intent.putExtra("level", level);
              startActivity(intent);finish();
  		}

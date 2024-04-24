@@ -1,200 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout 
-    xmlns:android="http://schemas.android.com/apk/res/android" 
-    android:layout_width="fill_parent" 
-    android:layout_height="fill_parent" 
-    >
-    
-<RelativeLayout 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    >
-    
-<TableLayout 
-    android:layout_width="fill_parent" 
-    android:layout_height="fill_parent" 
-    android:id="@+id/TableLayout03"
-    android:background="@drawable/bg"
-    >
-
-<TableRow 
-    android:id="@+id/TableRow04" 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content" 
-    android:gravity="center">
-
-    <Spinner 
-        android:id="@+id/Spinner01" 
-        android:layout_width="wrap_content" 
-        android:layout_height="wrap_content" 
-        android:layout_weight="1"
-        android:visibility="gone"></Spinner>
-</TableRow>
-
-<TableRow 
-    android:id="@+id/TableRow05" 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    >
-<RelativeLayout 
-    android:id="@+id/rl_content" 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content" 
-    android:layout_gravity="center" 
-    android:gravity="center">
-    <TextView 
-        android:layout_width="wrap_content" 
-        android:layout_height="wrap_content" 
-        android:layout_centerVertical="true"
-        android:id="@+id/tv1" 
-        android:layout_alignParentLeft="true"
-        android:layout_gravity="left"
-        android:layout_marginTop="2dp"
-        android:layout_marginLeft="2dp"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:typeface="serif"
-        android:textSize="30sp"
-        android:text="Tries: 00">
-    </TextView>
-    <TextView 
-        android:layout_width="wrap_content" 
-        android:layout_height="wrap_content" 
-        android:id="@+id/tv_timer" 
-        android:layout_centerInParent="true"
-        android:layout_gravity="center"
-        android:textColor="#00ff00"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:text="Timer: 00"
-        android:visibility="gone">
-    </TextView>
-    <ImageView 
-        android:layout_width="wrap_content" 
-        android:layout_height="wrap_content" 
-        android:id="@+id/btn_pause" 
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="2dp"
-        android:layout_marginRight="2dp"
-        android:layout_gravity="right"
-        android:src="@drawable/btn_pause"
-        android:text=""/>
-    </RelativeLayout>
-</TableRow>
-
-<TableRow 
-    android:id="@+id/TableRowView" 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content"
-    >
-
-<ProgressBar
-    android:id="@+id/progressHorizontal"
-    style="@android:style/Widget.ProgressBar.Horizontal"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginTop="20dp"
-    />
+    android:layout_height="fill_parent">
 
-</TableRow>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
 
-<TableRow 
-    android:id="@+id/TableRowView" 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content"
-    >
-<View 
-    android:layout_width="wrap_content" 
-    android:layout_height="70dp"
-    />    
-    </TableRow>
+        <TableLayout
+            android:id="@+id/TableLayout03"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg">
 
-<TableRow 
-    android:id="@+id/TableRow05" 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    >
-    
-    </TableRow>
+            <TableRow
+                android:id="@+id/TableRow04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
 
-<TableRow 
-    android:id="@+id/TableRow01" 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content" 
-    android:layout_gravity="center" 
-    android:gravity="center">
-<TextView 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content" 
-    android:gravity="center" 
-    android:text="Make Pairs" 
-    android:visibility="visible" 
-    android:textSize="30sp" 
-    android:paddingTop="20sp" 
-    android:textColor="#EEFFAA" 
-    android:id="@+id/mainTitle">
-</TextView></TableRow>
+                <Spinner
+                    android:id="@+id/Spinner01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"></Spinner>
+            </TableRow>
 
-<TableRow 
-    android:id="@+id/TableRow02" 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content" 
-    android:gravity="center">
-<TextView 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content" 
-    android:layout_gravity="center" 
-    android:gravity="center" 
-    android:typeface="normal" 
-    android:bufferType="normal" 
-    android:textColor="#FFEEAA" 
-    android:id="@+id/myWebSite" 
-    android:text=""
-    android:visibility="gone">
-</TextView>
-</TableRow>
+            <TableRow
+                android:id="@+id/TableRow05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-<TableRow 
-    android:id="@+id/TableRow03" 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content" 
-    android:gravity="center">
-<LinearLayout 
-    android:id="@+id/LinearLayout01" 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content" 
-    android:layout_gravity="center" 
-    android:gravity="center">
-<ImageView 
-    android:id="@+id/ImageView01" 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content" 
-    android:background="@drawable/card1" 
-    android:layout_gravity="center"
-    android:visibility="gone">
-</ImageView>
-</LinearLayout>
-</TableRow>
+                <RelativeLayout
+                    android:id="@+id/rl_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
 
-<TableRow 
-    android:id="@+id/TableRowBar" 
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content"
-    >
-</TableRow>
-</TableLayout>
-</RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Tries: 00"
+                        android:textColor="#000000"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:typeface="serif"></TextView>
 
-<View 
-    android:id="@+id/bottomView"
-    android:layout_width="wrap_content" 
-    android:layout_height="100dp" 
-    android:layout_alignParentBottom="true">
-</View>
+                    <TextView
+                        android:id="@+id/tv_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:text="Timer: 00"
+                        android:textColor="#00ff00"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"></TextView>
+
+                    <ImageView
+                        android:id="@+id/btn_pause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/btn_pause"
+                        android:text="" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/progressHorizontal"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRow05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/mainTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="20sp"
+                    android:text="Make Pairs"
+                    android:textColor="#EEFFAA"
+                    android:textSize="30sp"
+                    android:visibility="visible"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRow02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/myWebSite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:bufferType="normal"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#FFEEAA"
+                    android:typeface="normal"
+                    android:visibility="gone"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRow03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/card1"
+                        android:visibility="gone"></ImageView>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottomView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"></View>
 </RelativeLayout>

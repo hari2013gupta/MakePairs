@@ -128,7 +128,7 @@ public class ModeActivity extends Activity {
   		@Override
   		public void onClick(View v) {
 	         level = "diff1";
-             Intent intent = new Intent (ModeActivity.this, MainActivity.class);
+             Intent intent = new Intent (ModeActivity.this, MainActivityHari.class);
              intent.putExtra("level", level);
              intent.putExtra("bool_sound", bool_sound);
              startActivity(intent);finish();
@@ -141,7 +141,7 @@ public class ModeActivity extends Activity {
   		@Override
   		public void onClick(View v) {
 	         level = "diff2";
-             Intent intent = new Intent (ModeActivity.this, MainActivity.class);
+             Intent intent = new Intent (ModeActivity.this, MainActivityHari.class);
              intent.putExtra("level", level);
              intent.putExtra("bool_sound", bool_sound);
              startActivity(intent);finish();
@@ -153,7 +153,7 @@ public class ModeActivity extends Activity {
   		@Override
   		public void onClick(View v) {
 	         level = "diff3";
-             Intent intent = new Intent (ModeActivity.this, MainActivity.class);
+             Intent intent = new Intent (ModeActivity.this, MainActivityHari.class);
              intent.putExtra("level", level);
              intent.putExtra("bool_sound", bool_sound);
              startActivity(intent);finish();
@@ -165,7 +165,7 @@ public class ModeActivity extends Activity {
   		@Override
   		public void onClick(View v) {
 	         level = "diff4";
-             Intent intent = new Intent (ModeActivity.this, MainActivity.class);
+             Intent intent = new Intent (ModeActivity.this, MainActivityHari.class);
              intent.putExtra("level", level);
              intent.putExtra("bool_sound", bool_sound);
              startActivity(intent);finish();
@@ -177,7 +177,7 @@ public class ModeActivity extends Activity {
   		@Override
   		public void onClick(View v) {
 	         level = "diff5";
-             Intent intent = new Intent (ModeActivity.this, MainActivity.class);
+             Intent intent = new Intent (ModeActivity.this, MainActivityHari.class);
              intent.putExtra("level", level);
              intent.putExtra("bool_sound", bool_sound);
              startActivity(intent);finish();
@@ -189,7 +189,7 @@ public class ModeActivity extends Activity {
   		@Override
   		public void onClick(View v) {
 	         level = "diff6";
-             Intent intent = new Intent (ModeActivity.this, MainActivity.class);
+             Intent intent = new Intent (ModeActivity.this, MainActivityHari.class);
              intent.putExtra("level", level);
              intent.putExtra("bool_sound", bool_sound);
              startActivity(intent);finish();

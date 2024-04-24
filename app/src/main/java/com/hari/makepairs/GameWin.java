@@ -29,7 +29,7 @@ public class GameWin extends Activity {
 ////////////////////	    	
 	    	NextPlayAgain.setOnClickListener(new View.OnClickListener() { 
 	        	public void onClick(View v) {
-	                Intent intent = new Intent (GameWin.this, MainActivity.class);
+	                Intent intent = new Intent (GameWin.this, MainActivityHari.class);
 	                intent.putExtra("level", level);
 	                startActivity(intent);finish();
 	            }

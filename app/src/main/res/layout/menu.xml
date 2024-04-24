@@ -71,6 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/btn_help"
             android:layout_marginTop="6dp"
+			android:visibility="gone"
             android:layout_below="@+id/btn_help"
             android:background="@drawable/btn_about"
             android:text=""

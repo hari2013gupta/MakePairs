@@ -29,7 +29,7 @@ public class GameOver extends Activity {
 ////////////////////	    	
 	    	PlayAgain.setOnClickListener(new View.OnClickListener() { 
 	        	public void onClick(View v) {
-	                Intent intent = new Intent (GameOver.this, MainActivity.class);
+	                Intent intent = new Intent (GameOver.this, MainActivityHari.class);
 	                intent.putExtra("level", level);startActivity(intent);finish();
 //	                Audio.stop();
 	            }
