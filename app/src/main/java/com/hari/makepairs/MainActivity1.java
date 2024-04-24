@@ -8,14 +8,14 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import androidx.annotation.NonNull;
 
 class Tile {
     public int x;
@@ -31,14 +31,14 @@ public class MainActivity1 extends Activity implements OnClickListener {
     final String TAG = MainActivity1.class.getSimpleName();
     private static int ROW_COUNT = -1;
     private static int COL_COUNT = -1;
-    private static Object lock = new Object();
+    private static final Object lock = new Object();
     //****************************************OWN VARIABLES
-    public String diff;
-    private ButtonListener buttonListener;
+//    public String diff;
+//    private ButtonListener buttonListener;
     int nx = 4, ny = 4;//ok_hari
     private int size = 0, Count = 0;
     List<String> input_strings = new ArrayList<>();
-    private int[][] grid= new int[input_strings.size()][];;
+    private int[][] grid= new int[input_strings.size()][];
     private Tile firstTile, secondTile;
     private UpdateCardsHandler handler;
 
@@ -48,55 +48,55 @@ public class MainActivity1 extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
 
         handler = new UpdateCardsHandler();
-        buttonListener = new ButtonListener();
+//        buttonListener = new ButtonListener();
 
         newGame(nx, ny);
 //        tileGame();
     }//endOncrea
 
 //    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    private void tileGame() {
-
-        String arg0 = "11";
-        List<String> input_strings = new ArrayList<>();
-
-        String line = "11";
-        boolean first_arg = true;
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
-            while ((line = br.readLine()) != null) {
-                if (line.equals("")) {
-                    continue;
-                }
-
-                if(first_arg) {
-                    arg0 = line;
-                    first_arg = false;
-                } else {
-                    input_strings.add(line);
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-            return;
-        }
-
-        String[] tokens;
-        int[][] grid = new int[input_strings.size()][];
-        for(int i = 0; i < input_strings.size(); i++) {
-            tokens = input_strings.get(i).split(" ");
-            grid[i] = new int[tokens.length];
-            for(int j = 0; j < tokens.length; j++) {
-                grid[i][j] = Integer.parseInt(tokens[j]);
-            }
-        }
-        tokens = arg0.split(" ");
-        int row = Integer.parseInt(tokens[0]);
-        int col = Integer.parseInt(tokens[1]);
-
-        System.out.println(row + " " + col);
-//     System.out.println(disappear(grid, row, col));
-
-    }
+//    private void tileGame() {
+//
+//        String arg0 = "11";
+//        List<String> input_strings = new ArrayList<>();
+//
+//        String line = "11";
+//        boolean first_arg = true;
+//        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+//            while ((line = br.readLine()) != null) {
+//                if (line.equals("")) {
+//                    continue;
+//                }
+//
+//                if(first_arg) {
+//                    arg0 = line;
+//                    first_arg = false;
+//                } else {
+//                    input_strings.add(line);
+//                }
+//            }
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//            return;
+//        }
+//
+//        String[] tokens;
+//        int[][] grid = new int[input_strings.size()][];
+//        for(int i = 0; i < input_strings.size(); i++) {
+//            tokens = input_strings.get(i).split(" ");
+//            grid[i] = new int[tokens.length];
+//            for(int j = 0; j < tokens.length; j++) {
+//                grid[i][j] = Integer.parseInt(tokens[j]);
+//            }
+//        }
+//        tokens = arg0.split(" ");
+//        int row = Integer.parseInt(tokens[0]);
+//        int col = Integer.parseInt(tokens[1]);
+//
+//        System.out.println(row + " " + col);
+////     System.out.println(disappear(grid, row, col));
+//
+//    }
 
     private void newGame(int c, int r) {
         ROW_COUNT = r;
@@ -122,10 +122,10 @@ public class MainActivity1 extends Activity implements OnClickListener {
 
             Log.i("loadCards()", "size=" + size);
 
-            ArrayList<Integer> list = new ArrayList<Integer>();
+            ArrayList<Integer> list = new ArrayList<>();
 
             for (int i = 0; i < size; i++) {
-                list.add(new Integer(i));
+                list.add(i);
             }
 
             Random r = new Random();
@@ -137,7 +137,7 @@ public class MainActivity1 extends Activity implements OnClickListener {
                     t = r.nextInt(i);
                 }
 
-                t = list.remove(t).intValue();
+                t = list.remove(t);
                 grid[i % COL_COUNT][i / COL_COUNT] = t % (size / 2);
 
 	    		Log.i("loadCards(i)","======"+(i));
@@ -190,7 +190,7 @@ public class MainActivity1 extends Activity implements OnClickListener {
                                 handler.sendEmptyMessage(0);
                             }
                         } catch (Exception e) {
-                            Log.e("E1", e.getMessage());
+                            Log.e("E1", Objects.requireNonNull(e.getMessage()));
                         }
                     }
                 };
@@ -205,7 +205,7 @@ public class MainActivity1 extends Activity implements OnClickListener {
     class UpdateCardsHandler extends Handler {
 
         @Override
-        public void handleMessage(Message msg) {
+        public void handleMessage(@NonNull Message msg) {
             synchronized (lock) {
                 checkCards();
             }
@@ -216,8 +216,9 @@ public class MainActivity1 extends Activity implements OnClickListener {
                 System.out.println("firstTile.button.setVisibility(View.INVISIBLE");
                 System.out.println("secondTile.button.setVisibility(View.INVISIBLE");
 //    				Log.i("Count==",""+Count);Log.i("Size==",""+size);
-                if (Count == size / 2 - 1) {
-                } else Count++;
+                if (Count != size / 2 - 1) {
+                    Count++;
+                }
             } else {
                 Log.i(TAG, "card1.backgroundImage.reset");
                 Log.i(TAG, "card2.backgroundImage.reset");
